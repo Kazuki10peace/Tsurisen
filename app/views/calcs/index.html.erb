@@ -1,0 +1,19 @@
+<%= form_with(model: @calc, local: true) do |f| %>
+  <div class="index">
+    <div class="index-top">
+      <%= f.label :ten_thousand, "10,000円" %><br />
+    </div>
+    <div class="index-bottom">
+      <%= f.text_area :ten_thousand, placeholder: "入力してください" %>
+    </div>
+  </div>
+  <%= f.text_area :five_thousand, placeholder: "5,000円" %>
+  <%= f.text_area :one_thousand, placeholder: "1,000円" %>
+  <%= f.text_area :five_hundred, placeholder: "500円" %>
+  <%= f.text_area :one_hundred, placeholder: "１00円" %>
+  <%= f.text_area :fifty, placeholder: "50円" %>
+  <%= f.text_area :ten, placeholder: "10円" %>
+  <%= f.text_area :five, placeholder: "5円" %>
+  <%= f.text_area :one, placeholder: "１円" %>
+  <%= f.submit "SEND" %>
+<% end %>
