@@ -1,0 +1,34 @@
+
+.index {
+  font-size: 25px;
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  text-align: right;
+  margin-left: calc(100% - 95%);
+}
+
+.right {
+  margin-left: calc(100% - 95%);
+  margin-right: calc(100% - 95%);
+}
+
+.thousand {
+  margin-left: 16px;
+}
+
+.hundred {
+  margin-left: 38px;
+}
+
+.ten {
+  margin-left: 54px;
+}
+
+.one {
+  margin-left: 70px;
+}

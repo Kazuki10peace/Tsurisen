@@ -1,19 +1,102 @@
 <%= form_with(model: @calc, local: true) do |f| %>
   <div class="index">
-    <div class="index-top">
-      <%= f.label :ten_thousand, "10,000円" %><br />
+    <div class="main">
+      <div class="left">
+        <%= f.label :ten_thousand, "10,000円" %>
+        <%= f.text_area :ten_thousand, placeholder: "入力してください" %>
+      </div>
+      <div class="right">
+        <span class="output" id='ten-thousand'></span>(ここに計算結果入れる) 円
+      </div>
     </div>
-    <div class="index-bottom">
-      <%= f.text_area :ten_thousand, placeholder: "入力してください" %>
+    <div class="main">
+      <div class="left">
+        <div class="thousand">
+          <%= f.label :five_thousand, "5,000円" %>
+          <%= f.text_area :five_thousand, placeholder: "入力してください" %>
+        </div>
+      </div>
+      <div class="right">
+        <span class="output" id='five-thousand'></span>(ここに計算結果入れる) 円
+      </div>
     </div>
-  </div>
-  <%= f.text_area :five_thousand, placeholder: "5,000円" %>
-  <%= f.text_area :one_thousand, placeholder: "1,000円" %>
-  <%= f.text_area :five_hundred, placeholder: "500円" %>
-  <%= f.text_area :one_hundred, placeholder: "１00円" %>
-  <%= f.text_area :fifty, placeholder: "50円" %>
-  <%= f.text_area :ten, placeholder: "10円" %>
-  <%= f.text_area :five, placeholder: "5円" %>
-  <%= f.text_area :one, placeholder: "１円" %>
-  <%= f.submit "SEND" %>
+    <div class="main">
+      <div class="left">
+        <div class="thousand">
+          <%= f.label :one_thousand, "1,000円" %>
+          <%= f.text_area :one_thousand, placeholder: "入力してください" %>
+        </div>
+      </div>
+      <div class="right">
+        <span class="output" id='one-thousand'></span>(ここに計算結果入れる) 円
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="hundred">
+          <%= f.label :five_hundred, "500円" %>
+          <%= f.text_area :five_hundred, placeholder: "入力してください" %>
+        </div>
+      </div>
+      <div class="right">
+        <span class="output" id='five-hundred'></span>(ここに計算結果入れる) 円
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="hundred">
+          <%= f.label :one_hundred, "100円" %>
+          <%= f.text_area :one_hundred, placeholder: "入力してください" %>
+        </div>
+      </div>
+      <div class="right">
+        <span class="output" id='one-hundred'></span>(ここに計算結果入れる) 円
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="ten">
+          <%= f.label :fifty, "50円" %>
+          <%= f.text_area :fifty, placeholder: "入力してください" %>
+        </div>
+      </div>
+      <div class="right">
+        <span class="output" id='fifty'></span>(ここに計算結果入れる) 円
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="ten">
+          <%= f.label :ten, "10円" %>
+          <%= f.text_area :ten, placeholder: "入力してください" %>
+        </div>
+      </div>
+      <div class="right">
+        <span class="output" id='ten'></span>(ここに計算結果入れる) 円
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="one">
+          <%= f.label :five, "5円" %>
+          <%= f.text_area :five, placeholder: "入力してください" %>
+        </div>
+      </div>
+      <div class="right">
+        <span class="output" id='five'></span>(ここに計算結果入れる) 円
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="one">
+          <%= f.label :one, "1円" %>
+          <%= f.text_area :one, placeholder: "入力してください" %>
+        </div>
+      </div>
+      <div class="right">
+        <span class="output" id='one'></span>(ここに計算結果入れる) 円
+      </div>
+    </div>
+  <%= f.submit "計算する" %>
+</div>
 <% end %>
