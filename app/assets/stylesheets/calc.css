@@ -32,3 +32,18 @@
 .one {
   margin-left: 70px;
 }
+
+.first-list {
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+}
+
+.login {
+  margin: 0 3vw;
+  color: #333333;
+}
+
+.sign-up {
+  color: #333333;
+}
