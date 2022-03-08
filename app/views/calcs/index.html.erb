@@ -1,4 +1,5 @@
 <%= form_with(model: @calc, local: true) do |f| %>
+  <% if user_signed_in? %>
   <div class="index">
     <div class="main">
       <div class="left">
@@ -97,6 +98,10 @@
         <span class="output" id='one'></span>(ここに計算結果入れる) 円
       </div>
     </div>
-  <%= f.submit "計算する" %>
-</div>
+    <%= f.submit "計算する" %>
+  </div>
+  <% else %>
+    <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+    <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+  <% end %>
 <% end %>
