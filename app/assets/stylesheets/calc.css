@@ -12,7 +12,7 @@
   margin-left: calc(100% - 95%);
 }
 
-.right {
+.center {
   margin-left: calc(100% - 95%);
   margin-right: calc(100% - 95%);
 }
@@ -32,6 +32,9 @@
 .one {
   margin-left: 70px;
 }
+.cash {
+  margin-left: 12px;
+}
 
 .first-list {
   display: flex;
@@ -46,4 +49,13 @@
 
 .sign-up {
   color: #333333;
+}
+
+.list-header {
+  display: flex;
+  margin-left: 10px;
+}
+
+.mypage {
+  margin: 0 40px 0 20px;
 }
