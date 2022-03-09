@@ -27,6 +27,11 @@
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
 
+  <div class="field">
+    <label class="text-form">釣銭設定額</label><br />
+    <%= f.text_field :amount, class:"amount-edit", id:"amount", autocomplete: "amount" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "更新" %>
   </div>
